@@ -16,7 +16,7 @@ function App() {
   const [theme] = useTheme();
   return (
     <>
-      <div id={theme}>
+      <div id={theme} className="App">
         <ToastContainer />
         <MobileNav/>
         <Layout />

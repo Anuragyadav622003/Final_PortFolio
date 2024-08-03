@@ -30,20 +30,19 @@ const Education = () => {
               <div className="bo">
                 <h3 className="vertical-timeline-element-title col-1">Btech</h3>
                 <p>
-                  <span className="col-1">collage:</span> Mmmut Gorakhpur
+                  <span className="col-1">collage:</span> University Institute of Engineering and Technology, Kanpur University
                 </p>
                 <p>
-                  <span className="col-1">Address:</span> Gorakhpur-Deoria road
-                  , Up
+                  <span className="col-1">Address:</span> Kanpur Nagar, Utter Pradesh
                 </p>
                 <p>
                   <span className="col-1">Branch:</span> Computer Science
                 </p>
                 <p>
-                  <span className="col-1">Current Year:</span> 3rd year
+                  <span className="col-1">Current Year:</span> 4th year
                 </p>
                 <p>
-                  <span className="col-1">Current Cgpa:</span> 7.52 cgpa
+                  <span className="col-1">Current Cgpa:</span> 6.04 cgpa
                 </p>
               </div>
             </VerticalTimelineElement>
@@ -75,7 +74,7 @@ const Education = () => {
                   <span className="col-2">Stream:</span> Mathematics
                 </p>
                 <p>
-                  <span className="col-2">Percentage:</span> 79.00%
+                  <span className="col-2">Percentage:</span> 78.04%
                 </p>
               </div>
             </VerticalTimelineElement>
@@ -104,11 +103,9 @@ const Education = () => {
                 <p>
                   <span className="col-3">Board:</span> Cbse
                 </p>
+               
                 <p>
-                  <span className="col-3">Stream:</span> Math / Science
-                </p>
-                <p>
-                  <span className="col-3">Cgpa:</span> 10.00 cgpa
+                  <span className="col-3">Cgpa:</span> 76.80%
                 </p>
               </div>
             </VerticalTimelineElement>

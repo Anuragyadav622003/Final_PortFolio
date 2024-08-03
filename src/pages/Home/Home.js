@@ -30,7 +30,7 @@ const Home = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}>
-            Hi 👋 I'm Arun Yadav a
+            Hi 👋 I'm Anurag Yadav a
           </motion.h2>
           <p className="move">
             <Typewriter
@@ -40,6 +40,7 @@ const Home = () => {
                   "Problem Solver !",
                   "FullStack Developer !",
                   "MernStack Developer !",
+                  "React Native Developer !",
                   "Programmer !",
                 ],
                 autoStart: true,
@@ -56,7 +57,7 @@ const Home = () => {
               <button className="btn cancel-btn">Hire me</button>
             </Link>
             <a
-              href="https://drive.google.com/file/d/1MD80DCpILohn9hlIF0CiVqzhuTsBY47M/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1DkrgTFstZPMroxUuIdahcvbA6XqM4Dn-/view"
               className="btn confirm-btn">
               view Resume
             </a>

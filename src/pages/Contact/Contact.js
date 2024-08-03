@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -19,27 +19,32 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      await axios.post(
-        "https://final-portfolio-backend.vercel.app/contact",
-        formData
+    emailjs
+      .send(
+        "service_alaexys",     // Replace with your EmailJS service ID
+        "template_p04pksk",     // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "TxceL7FSRZLxJjIYs"          // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully");
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          alert(`Error in sending message: ${error.text}`);
+        }
       );
-      alert("Message sent successfully");
-      // Clear the form data
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    } catch (err) {
-      alert(
-        `Error in sending message: ${
-          err.response ? err.response.data.message : err.message
-        }`
-      );
-    }
   };
 
   return (
@@ -48,8 +53,9 @@ const Contact = () => {
         className="col-12 mt-3 mb-1 text-center"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 0.5 }}>
-        Contact With Us
+        transition={{ duration: 0.5 }}
+      >
+        Contact Me
       </motion.h2>
       <div className="line"></div>
       <div className="card card0 border-0">
@@ -71,22 +77,23 @@ const Contact = () => {
               className="card2 d-flex card border-0 px-4 py-5"
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5 }}>
+              transition={{ duration: 0.5 }}
+            >
               <div className="row">
                 <h6>
                   <div className="social-icons">
                     Check Link👉
-                    <a href="https://www.linkedin.com/in/arun273404/">
+                    <a href="https://www.linkedin.com/in/anurag-yadav-3704b1239/">
                       <BsLinkedin color="blue" size={30} />
                     </a>
-                    <a href="https://github.com/Ar273404">
+                    <a href="https://github.com/Anuragyadav622003">
                       <BsGithub color="blue" size={30} />
                     </a>
-                    <a href="https://www.codechef.com/users/ar2734">
-                      <SiCodechef color="blue" size={30} />
-                    </a>
-                    <a href="https://leetcode.com/u/Arun_0806/">
+                    <a href="https://leetcode.com/u/anuragyadav622003/">
                       <SiLeetcode color="blue" size={30} />
+                    </a>
+                    <a href="https://www.codechef.com/users/anuragyadav622">
+                      <SiCodechef color="blue" size={30} />
                     </a>
                   </div>
                 </h6>
@@ -142,7 +149,8 @@ const Contact = () => {
                   type="submit"
                   className="button"
                   whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}>
+                  whileTap={{ scale: 0.95 }}
+                >
                   SEND MESSAGE
                 </motion.button>
               </div>

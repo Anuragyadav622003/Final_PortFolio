@@ -56,25 +56,25 @@ const projects = [
     details: ["Html", "Css", "Javascript"],
     imgSrc:
       "https://www.shutterstock.com/image-vector/match-3-candy-game-ui-600nw-2259723079.jpg",
-    link: "https://ar273404.github.io/Candy.git.io/",
+    link: "https://github.com/Anuragyadav622003/FitFolio-Health-Fitness-tracker-android-app/releases/download/v1.0.0/app-release.apk",
     gitl: "https://github.com/Ar273404/Candy.git.io",
   },
   {
     id: 6,
-    title: "Quiz Game",
+    title: "FitFolio  app",
     description:
-      "Created a quiz game that asks questions, awards scores for correct answers, and tracks user performance with a dynamic scoring system.",
-    details: ["Html", "Css", "Javascript"],
+      "Developed Healthify, a React Native app featuring a to-do list, activity tracking with video guidance, and calorie burn monitoring. Implemented JWT for authentication and data management. Enhanced user experience with real-time push notifications.",
+    details: ["React Native", "Expressjs","Nodejs","MongoDB"],
     imgSrc:
-      "https://thumbs.dreamstime.com/z/quiz-background-colorful-brushstrokes-oil-acrylic-paint-inscription-text-gradient-brush-isolated-white-184770923.jpg",
-    link: "https://ar273404.github.io/Quiz/",
-    gitl: "https://github.com/Ar273404/Quiz",
+      "https://images.creativemarket.com/0.1.0/ps/11330168/2250/1500/m1/fpnw/wm0/fitness-cover-primary-.png?1640751677&s=44c18a5fcada74be90582a841312f0e5",
+    link: "https://github.com/Anuragyadav622003/FitFolio-Health-Fitness-tracker-android-app/releases/download/v1.0.0/app-release.apk",
+    gitl: "https://github.com/Anuragyadav622003/FitFolio-Health-Fitness-tracker-android-app",
   },
 ];
 
 const Project = () => {
   return (
-    <div className="container project" id="projects">
+    <div className=" project" id="projects">
       <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
         TOP RECENT PROJECTS
       </h2>
@@ -82,94 +82,58 @@ const Project = () => {
       <p className="pb-3 text-center">
         👉 top recent project with live links and source code
       </p>
-      <div class="row" id="ads">
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-10">
-          {projects.map((projects)=>{
-            return (
-              <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
-                <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-                  <img
-                    src={projects.imgSrc}
-                    alt="product1"
-                    class="h-full w-full object-contain"
-                  />
-                </div>
+      <div className="row" id="ads">
+  <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {projects.map((project) => {
+      return (
+        <div key={project.id} className="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+          <div className="w-full h-[300px] overflow-hidden mx-auto">
+            <img
+              src={project.imgSrc}
+              alt={project.title}
+              className="h-full w-full object-contain"
+            />
+          </div>
 
-                <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
-                  <div class="text-center">
-                    <h3 class="text-base font-bold text-gray-800 mb-2">
-                      {projects.title}
-                    </h3>
-                    <h4 class="text-sm text-blue-600 font-bold mt-2 mb-2">
-                      {projects.description}
-                    </h4>
-                    <div>
-                      {projects.details.map((item) => {
-                        return (
-                          <span className="card-detail-badge ml-1">{item}</span>
-                        );
-                      })}
-                    </div>
-                  </div>
-                  <div className="font-[sans-serif] space-x-4 space-y-4 text-center mt-3">
-                    <a href={projects.link}>
-                      <button
-                        type="button"
-                        class="px-3 py-2 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-red-700 hover:bg-blue-800 active:bg-blue-700">
-                        Live
-                      </button>
-                    </a>
-                    <a href={projects.gitl}>
-                      <button
-                        type="button"
-                        class="px-3 py-2 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-purple-700 hover:bg-purple-800 active:bg-purple-700">
-                        GitHub
-                      </button>
-                    </a>
-                  </div>
-                  {/* <div class="flex justify-center space-x-1 mt-4">
-                    <svg
-                      class="w-4 fill-[#facc15]"
-                      viewBox="0 0 14 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-                    </svg>
-                    <svg
-                      class="w-4 fill-[#facc15]"
-                      viewBox="0 0 14 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-                    </svg>
-                    <svg
-                      class="w-4 fill-[#facc15]"
-                      viewBox="0 0 14 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-                    </svg>
-                    <svg
-                      class="w-4 fill-[#facc15]"
-                      viewBox="0 0 14 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-                    </svg>
-                    <svg
-                      class="w-4 fill-[#CED5D8]"
-                      viewBox="0 0 14 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-                    </svg>
-                  </div> */}
-                </div>
+          <div className="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+            <div className="text-center">
+              <h3 className="text-base font-bold text-gray-800 mb-2">
+                {project.title}
+              </h3>
+              <h4 className="text-sm text-blue-600 font-bold mt-2 mb-2">
+                {project.description}
+              </h4>
+              <div>
+                {project.details.map((item, index) => {
+                  return (
+                    <span key={index} className="card-detail-badge ml-1">{item}</span>
+                  );
+                })}
               </div>
-            );
-          })}
+            </div>
+            <div className="font-[sans-serif] space-x-4 text-center mt-3">
+              <a href={project.link}>
+                <button
+                  type="button"
+                  className="px-3 py-2 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-red-700 hover:bg-blue-800 active:bg-blue-700">
+                  Live
+                </button>
+              </a>
+              <a href={project.gitl}>
+                <button
+                  type="button"
+                  className="px-3 py-2 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-purple-700 hover:bg-purple-800 active:bg-purple-700">
+                  GitHub
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      );
+    })}
+  </div>
+</div>
+
     </div>
   );
 };
