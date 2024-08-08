@@ -30,7 +30,7 @@ const Home = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}>
-            Hi 👋 I'm Anuragnpm autoStart Yadav a
+            Hi 👋 I'm Anurag Yadav 
           </motion.h2>
           <p className="move">
             <Typewriter
@@ -39,7 +39,7 @@ const Home = () => {
                   "CSE Student !",
                   "Problem Solver !",
                   "FullStack Developer !",
-                  "MernStack Developer !",
+                  "Mern Stack Developer !",
                   "React Native Developer !",
                   "Programmer !",
                 ],
