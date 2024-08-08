@@ -68,7 +68,7 @@ const Education = () => {
                   <span className="col-2">Address:</span> Gola Bazar , Gorakhpur
                 </p>
                 <p>
-                  <span className="col-2">Board:</span> Cbse
+                  <span className="col-2">Board:</span> CBSE
                 </p>
                 <p>
                   <span className="col-2">Stream:</span> Mathematics
@@ -101,7 +101,7 @@ const Education = () => {
                   Nagar
                 </p>
                 <p>
-                  <span className="col-3">Board:</span> Cbse
+                  <span className="col-3">Board:</span> CBSE
                 </p>
                
                 <p>

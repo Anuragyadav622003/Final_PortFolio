@@ -6,9 +6,6 @@ import { HiMiniCircleStack } from "react-icons/hi2";
 import { SiSystem76 } from "react-icons/si";
 import { FaNetworkWired } from "react-icons/fa6";
 import { FcTreeStructure } from "react-icons/fc";
-import { TbBrandMysql } from "react-icons/tb";
-import { GiArtificialIntelligence } from "react-icons/gi";
-import { FaRobot } from "react-icons/fa";
 import { FcCopyright } from "react-icons/fc";
 import {
   SiJavascript,
@@ -81,42 +78,29 @@ export const TechstackList = [
   },
   {
     _id: 13,
-    name: "Mysql ",
-    icon: TbBrandMysql,
-  },
-  {
-    _id: 14,
     name: "Git / Github ",
     icon: SiGithub,
   },
   {
-    _id: 15,
-    name: "Dbms",
+    _id: 14,
+    name: "DBMS",
     icon: HiMiniCircleStack,
   },
   {
-    _id: 16,
+    _id: 15,
     name: "Data Structure",
     icon: FcTreeStructure,
   },
   {
-    _id: 17,
+    _id: 16,
     name: "Computer Network",
     icon: FaNetworkWired,
   },
   {
-    _id: 18,
+    _id: 17,
     name: "Operating System",
     icon: SiSystem76,
   },
-  {
-    _id: 19,
-    name: "Artificial intelligence",
-    icon: GiArtificialIntelligence,
-  },
-  {
-    _id: 19,
-    name: "Basic Machine Learning",
-    icon: FaRobot,
-  },
+
+ 
 ];

@@ -30,7 +30,7 @@ const Home = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}>
-            Hi 👋 I'm Anurag Yadav a
+            Hi 👋 I'm Anuragnpm autoStart Yadav a
           </motion.h2>
           <p className="move">
             <Typewriter

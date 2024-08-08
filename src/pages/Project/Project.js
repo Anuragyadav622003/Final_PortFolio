@@ -27,15 +27,15 @@ const projects = [
   },
   {
     id: 3,
-    title: "Food Delivery Website",
+    title: "Testify Food Delivery app",
     description:
       "👉 Developed a food delivery website with user authentication, responsive design, admin dashboard for orders and restaurants, and payment options.",
     badge: "Mern stack",
-    details: ["Mongodb", "Express", "React", "Node Js"],
+    details: ["Mongodb", "Express", "React Native", "Node Js"],
     imgSrc:
       "https://www.pngitem.com/pimgs/m/69-694009_transparent-food-delivery-clipart-pizza-free-home-delivery.png",
     link: "https://finalfoodfronted.onrender.com",
-    gitl: "https://github.com/Ar273404/finalfoodfronted",
+    gitl: "https://github.com/Anuragyadav622003/Testify_food_delivery_app",
   },
   {
     id: 4,
@@ -67,8 +67,8 @@ const projects = [
     details: ["React Native", "Expressjs","Nodejs","MongoDB"],
     imgSrc:
       "https://images.creativemarket.com/0.1.0/ps/11330168/2250/1500/m1/fpnw/wm0/fitness-cover-primary-.png?1640751677&s=44c18a5fcada74be90582a841312f0e5",
-    link: "https://github.com/Anuragyadav622003/FitFolio-Health-Fitness-tracker-android-app/releases/download/v1.0.0/app-release.apk",
-    gitl: "https://github.com/Anuragyadav622003/FitFolio-Health-Fitness-tracker-android-app",
+    link: "https://github.com/Anuragyadav622003/FitFolio-Health-Fitness-Tracker-app-android/releases/download/v1.0.0/app-release.apk",
+    gitl: "https://github.com/Anuragyadav622003/FitFolio-Health-Fitness-Tracker-app-android",
   },
 ];
 
